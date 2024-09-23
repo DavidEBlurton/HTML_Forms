@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Personal Portfolio</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="resume.html">Resume</a>
+                <a href="contact.html">Contact</a>
+                <a href="projects.html">Projects</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Home Page -->
+        <section id="home" class="main-content">
+            <h2>Welcome to My Portfolio</h2>
+            <img src="images/IMG_2183.jpg" alt="Profile Picture" style="width:150px;height:auto;">
+            <p>Hello! I'm David Blurton, a passionate web developer with a knack for creating dynamic and engaging websites. Explore my portfolio to learn more about my work and experiences.</p>
+        </section>
+
+        <!-- About Me Page -->
+        <section id="about" class="main-content">
+            <h2>About Me</h2>
+            <p>I am a artist with a background in Studio Art. I hold a degree in Studio Art from Bakersfield College. My interests include drawing, painting, and photography.  I have recently expanded into the tech field, with some certifications in front end development. I am a recent graduate from Coding Temple, where I grew my passion more for the ability to turn my art digital and grow with the times.</p>
+        </section>
+
+        <!-- Resume Page -->
+        <section id="resume" class="main-content">
+            <h2>Resume/CV</h2>
+            <h3>Education</h3>
+            <ul>
+                <li>Associate of the Arts from Bakersfield College</li>
+                <li>certificates from Coding Temple</li>
+            </ul>
+            <h3>Work Experience</h3>
+            <ul>
+                <li>Meat Clerk at Albertson's - 3 years</li>
+                <li>Frontend developer at Google - 2 years</li>
+            </ul>
+            <h3>Skills</h3>
+            <p>Proficient in: Python, Java Script, Api's</p>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contact" class="main-content">
+            <h2>Contact Me</h2>
+            <form action="send-message.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                <br>
+                <button type="submit">Send</button>
+            </form>
+            <p>Or reach me at <a href="mailto:your.email@example.com">blurtondavid44@gmail.com</a></p>
+        </section>
+
+        <!-- Projects Page (Bonus) -->
+        <section id="projects" class="main-content">
+            <h2>Projects</h2>
+            <article>
+                <h3>Project One</h3>
+                <img src="images/1_cx9KtBHUTUsabHKB-lHJww.png" alt="Project One" style="width:100%;height:auto;">
+                <p>i created a pokemon api app. Technologies used: python, javascript.</p>
+            </article>
+            <article>
+                <h3>Project Two</h3>
+                <img src="images/35473617030_492891e14a_b.jpg" alt="Project Two" style="width:100%;height:auto;">
+                <p>I also created a task management application to help[ with everyday life. Technologies used: python, javascript.</p>
+            </article>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    </footer>
+</body>
+</html>
